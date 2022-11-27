@@ -1,0 +1,45 @@
+
+#cv3{
+    background-color: white;
+
+}
+#cv3 .skill_list{
+    margin: 0px;
+}
+#cv3 #skill1{
+margin: 0px;
+}
+#cv3 .col-4{
+    background-color: white;
+    border-top: 30px solid rgb(110, 149, 233);
+    padding-left: 40px;
+}
+.content{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#cv3 .col-8{
+    margin-left: 0px;
+margin-top: 50px;
+border-bottom: 30px solid rgb(110, 149, 233);
+}
+#cv3 h2, #cv3 h4{
+    color:rgb(110, 149, 233);
+}
+#cv3 img{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+   
+}
+#cv3 h2{
+    border:0px;
+}
+#cv3 h4{
+   
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+#cv3 h2{
+    font-weight: 700;
+}

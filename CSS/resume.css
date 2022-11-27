@@ -1,0 +1,529 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+/* .hidden{
+    display: none;
+} */
+.alert {
+    width: 100%;
+    background-color: rgba(254, 180, 201, 0.5);
+    border: 1px solid rgb(233, 159, 159);
+    padding: 5px;
+    color: rgba(68, 17, 17, 0.8);
+    margin-top: 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.save_btn {
+    color: rgb(110, 149, 233);
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.div {
+    padding: 50px 30px 30px 30px;
+    box-shadow: 5px 5px 20px 10px rgb(173, 172, 172);
+
+}
+
+.add_div {
+    margin-top: 6px;
+    text-align: right;
+    color: rgb(110, 149, 233);
+    /* pointer-events: none; */
+}
+
+a:active {
+    background-color: rgba(147, 175, 234, 0.2);
+    border-radius: 20px;
+
+}
+
+.head_title {
+
+    background-color: rgb(110, 149, 233);
+    color: white;
+    padding: 8px 65px;
+    border-radius: 10px 5px 30px 5px;
+}
+
+
+a,
+a:active,
+a:visited {
+    color: rgb(110, 149, 233);
+    text-decoration: none;
+}
+
+.mini_input {
+    position: relative;
+    height: 40px;
+    display: inline-block;
+    width: 45%;
+
+}
+
+#forms .mini_input label {
+    position: absolute;
+    color: gray;
+    width: 100%;
+    left: 10px;
+    transition: all 0.3s ease;
+
+}
+
+#forms .mini_input input:focus~label,
+#forms .mini_input input:valid~label {
+    transform: translateY(-20px);
+
+}
+
+h2:not(.not_underlined) {
+    border-bottom: 1px solid black;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+#personal_info .mini_input {
+    display: inline;
+}
+
+.mini_input input {
+
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+
+    border: none;
+    border-bottom: 2px solid rgb(144, 143, 143);
+}
+
+#forms {
+    overflow: scroll;
+    background-color: white;
+    width: 100%;
+    border-top: 50px solid rgb(110, 149, 233);
+    border-bottom: 20px solid rgb(110, 149, 233);
+
+
+}
+
+input[type=date] {
+    color: transparent !important;
+}
+
+input[type=date]:focus,
+input[type=date]:valid {
+    color: black !important;
+}
+
+.active input[type=date] {
+    color: inherit !important;
+}
+
+.active input[type=date]:focus {
+    color: black !important;
+}
+
+
+#forms .input-data:not(#bio_div) {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#forms .input-data input,
+#forms .input-data textarea {
+    height: 100%;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+
+    border-bottom: 2px solid rgb(144, 143, 143);
+}
+#full_name h3{
+    font-size: 24px;
+}
+#forms .input-data .underline,
+.mini_input .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+
+}
+
+
+.input-data .underline:before,
+.mini_input .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(110, 149, 233);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before,
+.mini_input input:focus~.underline:before,
+.mini_input input:valid~.underline:before,
+.input-data textarea:focus~.underline:before,
+.input-data textarea:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+
+
+.exp_add1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px
+}
+
+
+
+
+#forms .input-data label {
+    position: absolute;
+
+    bottom: 20px;
+    left: 0px;
+    color: rgb(148, 147, 147);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label,
+.input-data input:focus~.add_div .exp_add1,
+.input-data input:valid~.add_div .exp_add1 {
+    transform: translateY(-20px);
+
+
+}
+
+.input-data textarea:focus~label,
+.input-data textarea:valid~label {
+    transform: translateY(-55px);
+}
+
+#bio_div {
+    height: 75px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container-fluid {
+    width: 95%
+}
+
+.sub {
+    font-size: 14px;
+
+}
+
+#degree {
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+textarea {
+    width: 85%;
+    height: 100%;
+}
+
+h2 h5 {
+    font-weight: bolder;
+}
+
+input[type="submit"] {
+    background: rgb(110, 149, 233);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.skill_list {
+    margin-left: 50px;
+}
+
+.skill {
+    display: flex;
+}
+
+.exp_dates {
+    width: 110px;
+    margin-bottom: 5px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(200, 200, 200);
+}
+
+.content {
+
+    padding-left: 50px;
+    padding-right: 40px;
+    background-color: white;
+
+}
+
+/* .hidden{
+    display: none;
+} */
+
+h2 {
+    padding-top: 15px
+}
+
+ul {
+    margin-left: 20px;
+}
+
+
+
+
+
+#biodata {
+    color: white;
+    background-color: rgb(110, 149, 233);
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+#name {
+    padding-left: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#cv1 {
+    border-bottom: 20px solid rgb(110, 149, 233);
+}
+
+#cv1,
+#cv2 {
+    width: 100%;
+
+    height: max-content;
+
+
+
+}
+
+@media screen and  (max-width:762px) {
+    #cv1 {
+        border-bottom: 20px solid rgb(110, 149, 233);
+    }
+
+    /* .col-8 {
+        font-size: 12.5px;
+    } */
+#cv3{
+    font-size: 7px;
+}
+    #cv3 h2 , #cv3 h4{
+        font-size: smaller;
+    }
+
+    #cv3 .col-4{
+        padding: 10px !important;
+        margin: 0px;
+      
+    }
+
+    .mb-5
+
+    {
+        margin-bottom: 0.5rem !important;
+       ;
+    }
+    .mt-5 {
+        margin-top: 0.5rem !important
+    }
+.mb-3{
+    margin-bottom: 0px !important;
+}
+    address {
+        margin: 0px;
+    }
+
+
+    #cv3Image{
+        width: 100px !important;
+        height: 100px !important;
+    }
+.skill ul{
+    padding-left: 0px;
+}
+    #cv1,#cv2,#cv3 {
+        width: 100%;
+
+        height: max-content;
+
+
+
+    }
+    #cv2_div #cv2{
+        padding:25px;
+        font-size: 15px;
+        
+          }
+        #full_name{
+            letter-spacing: 0.1rem;
+           
+        }
+        #full_name h3{
+            font-size: 15px;
+        }
+        #cv2-col-4 h6{
+    font-size: 14px;
+        }   
+
+    .hidden_sm {
+        display: none !important;
+    }
+
+    .col-8:not(#cv3-col-8,#cv2-col-8,#cv1-col-8) {
+        width: 100%
+    }
+
+    .col-4:not(#cv3-col-4,#cv2-col-4,#cv1-col-4){
+        width: 100%
+    }
+
+    .head_title {
+        padding: 8px 50px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:612px) {
+
+    #cv2_div #cv2{
+        padding:18px;
+        font-size: 13px;
+        
+          }
+          #cv1 h2,.contact h5,.contact cv1 p{
+            font-size: 15px;
+          }
+        #cv2-col-8 #full_name{
+            letter-spacing: 0.02rem;
+           
+        }
+        #email{
+            overflow-wrap: break-word;
+        }
+        .row .head{
+            font-size: medium;
+        }
+        #full_name h3{
+            font-size: 13px;
+        }
+        #cv2 .container-fluid{
+            padding: 0px;
+        }
+        #cv2-col-4 h6, .exp_blockcv2 h6{
+    font-size: 11px;
+    font-weight: 500;
+        } 
+}
+@media screen and (min-width:762px) and (max-width:1075px) {
+
+    #cv1,
+    #cv2 {
+        width: 100%;
+
+        height: max-content;
+
+        border-bottom: 20px solid #6e95e9;
+
+    }
+
+    .hidden_sm {
+        display: none !important;
+    }
+
+    .col-8:not(#cv3-col-8,#cv3-col-8,#cv2-col-8,#cv1-col-8) {
+        width: 100%
+    }
+
+    .col-4:not(#cv3-col-4,#cv2-col-4,#cv1-col-4) {
+        width: 100%
+    }
+
+    .col-12 {
+        width: 40%;
+    }
+
+    .split {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+#cv2_div #cv2{
+    padding:25px;
+    
+      }
+    #full_name{
+        letter-spacing: 0.1rem;
+       
+    }
+    #full_name h3{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1075px) {
+    #edu_id {
+        padding-top: 20px;
+    }
+
+    .hidden_lg {
+        display: none;
+    }
+}

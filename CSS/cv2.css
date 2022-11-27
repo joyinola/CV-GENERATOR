@@ -1,0 +1,66 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    /* font-size: 18px; */
+font-family:Arial, Helvetica, sans-serif;
+
+}
+/* .col-9,h5,row{
+    margin-left: 0px;
+    padding-left: 0px;
+} */
+.names{
+    display:inline-block
+}
+.experience{
+    margin:10px 0px 10px 15px
+}
+.head{
+font-weight: bold;
+letter-spacing: 0.1em;
+border-bottom: 3px solid black;
+color:rgb(110, 149, 233);
+padding-bottom:5px;
+margin:10px 0px 10px 0px
+}
+
+/* #cv_div{
+margin:100px
+} */
+.container{
+    display:contents
+}
+#cv2{
+background-color: white;
+padding:50px
+}
+#initials{
+    padding: 25px 7px 5px 7px;
+ 
+    background-color:rgb(110, 149, 233) ;
+    color:white
+}
+#full_name{
+    letter-spacing: 0.2em;
+    color: rgb(110, 149, 233)
+}
+#contact h6{
+    padding:0px;
+    margin:0px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.row h6{
+    font-weight: 600;
+}
+
+
+/* @media screen and (min-width:400px) and (max-width:840px) {
+
+.cv2_div #cv2{
+    padding: 25px;
+}
+} */

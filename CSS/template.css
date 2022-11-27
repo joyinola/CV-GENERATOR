@@ -1,0 +1,510 @@
+#carouselExampleControls{
+    height: 450px;
+    width: 550px;
+    position: absolute;
+    right:150px;
+    top: 40px;
+ 
+}
+body{
+  transition: all ease 0.3s;
+}
+#carouselExampleControls span{
+  padding:30px;
+  border-radius: 50%;
+  background-color:gray;
+
+}
+.hidden{
+    display: none;
+}
+.col-8 a{
+    background-color: #436975;
+color:white;
+text-align: center;
+    color:white;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: larger;
+}
+.col-8 a:hover{
+    color:white;
+    text-decoration: none;
+    transform: scaleY(1.5);
+    box-shadow: 1px 5px 10px gray;
+    
+    
+
+}
+li:hover{
+    transform: scaleY(1.08);
+    transition: all 0.3s;
+}
+
+img{
+    width:70%;
+    height:410px;
+    margin: auto;
+    box-shadow: 5px 0px 20px gray;
+}
+
+.col-4{
+  background-image: url(../IMAGES/colors.jpg);
+  background-size: cover;
+  height:100vh;
+}
+.col-8{
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 50vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#color_picker{
+ box-shadow: 5px 0px 20px gray;
+ 
+  
+  
+
+}
+
+
+#color_picker p{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px 0px 10px;
+}
+#color_picker ul{
+  padding: 10px 20px 0px 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-bottom: 0px;
+  
+}
+#color_list{
+  border-top: 1px solid gray;
+  padding-bottom: 0px;
+}
+#color_picker ul li{
+  border-radius: 5px;
+  padding: 30px;
+  width:30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li img{
+    height:10px; 
+    width:10px;
+    
+}
+#black{
+  background-color: black;
+}
+#army_green{
+  background-color: #436975;
+}
+#blue{
+  background-color:  #6e95e9;
+}
+#teal{
+  background-color:  #0e9fc1;
+}
+#mint_teal{
+  background-color: #7ebca3;
+}
+#martini_green{
+  background-color: #acb75a;
+}
+#electric_purple{
+  background-color: #9097be
+}
+
+#purple{
+  background-color: #ac7bae
+}
+#vibrant_salmon{
+  background-color: #f46464
+}
+#vineyard_plum{
+  background-color: #96006f
+}
+#blush_pink{
+  background-color: #c5a3ab
+}
+#mustard{
+  background-color: #d39c00
+}
+@media  screen and (max-width:1110px) {
+  #carouselExampleControls img{
+    width:70%;
+    height:400px;
+    margin: auto;
+    box-shadow: 5px 0px 20px gray;
+}
+#carouselExampleControls span{
+  padding:20px;
+
+}
+#carouselExampleControls{
+  height: 400px;
+  width: 450px;
+  position: absolute;
+  right:55px;
+  top: 40px;
+
+} 
+#color_picker{
+  box-shadow: 5px 0px 20px gray;
+  position: relative;
+
+   flex-direction: column;
+   margin-left: 10px;
+ }
+ 
+ 
+ #color_picker p{
+   font-size: 15px;
+ 
+ }
+
+
+ #color_picker ul li{
+   border-radius: 5px;
+   padding: 20px;
+   width:20px;
+   height: 20px;
+ 
+  
+ }
+ .col-8 a{
+  
+  padding: 5px 25px;
+  font-size: larger;
+}
+
+
+}
+@media screen and (min-width:640px) and (max-width:800px) {
+  body{
+    position:relative;
+   }
+  .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col-4{
+    width: 100%;
+    height: 200px;
+  }
+  #carouselExampleControls{
+
+   
+    right:150px;
+    top: 10px;
+
+  
+  } 
+  #carouselExampleControls img{
+    width:60%;
+    height:350px;
+    /* margin: auto; */
+    box-shadow: 5px 0px 20px gray;
+}
+  #color_picker{
+    box-shadow: 5px 0px 20px gray;
+    
+     flex-direction: column;
+     
+     margin-top: 200px;
+     margin-bottom:0px ;
+     width:100%;
+     overflow-x: scroll;
+   }
+   
+   
+   #color_picker p{
+     font-size: 15px;
+     margin: 0px;
+   
+   }
+  
+  
+   #color_picker ul li{
+     border-radius: 5px;
+     padding: 20px;
+     width:20px;
+     height: 20px;
+   
+    
+   }
+   .col-8 a{
+    
+    padding: 5px 25px;
+    font-size: larger;
+    margin-left: 100px;
+    border-radius: 5px;
+  }
+  #color_picker ul{
+    padding: 10px 5px 0px 5x;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  
+    column-gap: 10px;
+    row-gap: 5px;
+    padding-bottom: 0px;
+    
+  }
+  .col-8{
+   
+    height: 85vh;
+    width: 100%;
+ margin: 0px;
+ padding:0px;
+  }
+}
+@media screen and (min-width:494px) and (max-width:640px){
+  .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #carouselExampleControls{
+
+   width:400px;
+    right:80px;
+    top: 10px;
+
+  
+  } 
+  .col-8 a{
+    
+    padding: 5px 15px;
+    font-size: larger;
+    margin-left: 70px;
+    border-radius: 5px;
+  }
+
+  #color_picker{
+    box-shadow: 5px 0px 20px gray;
+    
+     flex-direction: column;
+     
+     margin-top: 300px;
+     margin-bottom:0px ;
+     width:100%;
+     overflow-x: scroll;
+   }
+   
+   
+   #color_picker p{
+     font-size: 15px;
+     margin: 0px;
+   
+   }
+  
+  
+   #color_picker ul li{
+     border-radius: 5px;
+     padding: 20px;
+     width:20px;
+     height: 20px;
+   
+    
+   }
+ 
+  #color_picker ul{
+    padding: 10px 5px 0px 5x;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  
+    column-gap: 10px;
+    row-gap: 5px;
+    padding-bottom: 0px;
+    
+  }
+  .col-8{
+   
+    height: 85vh;
+    width: 100%;
+ margin: 0px;
+ padding:0px;
+  }
+  .col-4{
+    width:100%;
+    height:150px
+  }
+
+}
+
+
+
+  @media screen and  (min-width:445px) and (max-width:495px){
+    .col-8{
+   
+      height: 85vh;
+      width: 100%;
+   margin: 0px;
+   padding:0px;
+    }
+    .col-8 a{
+    
+      padding: 5px 25px;
+      font-size: larger;
+      margin-left: 70px;
+      border-radius: 5px;
+    }
+    #color_picker ul{
+      padding: 10px 5px 0px 5x;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+    
+      column-gap: 10px;
+      row-gap: 5px;
+      padding-bottom: 0px;
+      
+    }
+    #color_picker{
+      box-shadow: 5px 0px 20px gray;
+      
+       flex-direction: column;
+       
+       margin-top: 300px;
+       margin-bottom:0px ;
+       width:100%;
+       overflow-x: scroll;
+     }
+     
+     
+     #color_picker p{
+       font-size: 15px;
+       margin: 0px;
+     
+     }
+    
+    
+     #color_picker ul li{
+       border-radius: 5px;
+       padding: 20px;
+       width:20px;
+       height: 20px;
+     
+      
+     }
+    .row{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .col-4{
+      width: 100%;
+      height: 200px;
+    }
+
+    #carouselExampleControls span{
+      padding:5px;
+    }
+    #carouselExampleControls{
+  
+     
+      right:10px;
+      /* left:-60px; */
+      top: 15px;
+  
+    
+    } 
+  
+    /* #carouselExampleControls img{
+      width:90%;
+      
+    } */
+  }
+
+
+
+    @media screen and (max-width:445px){
+      .col-8{
+   
+        height: 85vh;
+        width: 100%;
+     margin: 0px;
+     padding:0px;
+      }
+      .col-8 a{
+      
+        padding: 5px 20px;
+        font-size: large;
+       
+        border-radius: 5px;
+      }
+      #color_picker ul{
+        padding: 10px 5px 0px 5x;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+      
+        column-gap: 10px;
+        row-gap: 5px;
+        padding-bottom: 0px;
+        
+      }
+      #color_picker{
+        box-shadow: 5px 0px 20px gray;
+        
+         flex-direction: column;
+         
+         margin-top: 300px;
+         margin-bottom:0px ;
+         width:100%;
+         overflow-x: scroll;
+       }
+       
+       
+       #color_picker p{
+         font-size: 15px;
+         margin: 0px;
+       
+       }
+      
+      
+       #color_picker ul li{
+         border-radius: 5px;
+         padding: 20px;
+         width:20px;
+         height: 20px;
+       
+        
+       }
+      .row{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .col-4{
+        width: 100%;
+        height: 200px;
+      }
+  
+      #carouselExampleControls span{
+        padding:5px;
+      }
+  
+
+
+      #carouselExampleControls{
+        width:100%;
+      left:0px;
+      right:0px
+      }
+      #carouselExampleControls img{
+        width:90%;
+        
+      }
+  
+}
